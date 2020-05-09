@@ -1,21 +1,22 @@
-let inicio = ['el','los']; 
+let inicio = ['el','los','la']; 
 let adj = ['gran', 'gran','pequeño' ]; 
-let cosa = ['gato','pelicano','turbina','Uppercat'];
+let cosa = ['Hook','Jab','Uppercat'];
 
 function dominios(){
-    
-    var uno = Math.floor(Math.random()* inicio.length);
-    var dos = Math.floor(Math.random()* adj.length);
-    var tres = Math.floor(Math.random()* cosa.length);
 
-   var mensaje = alert("www." + inicio[uno] + adj[dos] + cosa[tres] + ".com");
-   return;
+    for(let a = 0; a<inicio.length; a++){
+        for(let b = 0; b<adj.length; b++){
+            for(let c = 0; c<cosa.length; c++){
 
-}
+                console.log("www."+inicio[a]+adj[b]+cosa[c]+".com");
 
-
-                
-
-               
+            }
+        }
+    }
+        
+        
     
     
+}   
+
+dominios();
